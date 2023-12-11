@@ -9,8 +9,8 @@ import ToastProvider from '@/providers/ToastProvider'
 const font = Urbanist({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Asianwave experiment',
-  description: 'Expiremental website to apply in the actual site',
+  title: 'Asianwave',
+  description: 'Shop online with your favorite idol merchandise!',
 }
 
 export default function RootLayout({
