@@ -44,7 +44,7 @@ const Billboard: FC<BillboardProps> = ({
                     <div
                         className='text-center font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs'
                         style={{
-                            color: isHovered ? '#EDE9FE' : '#EDE9FE',
+                            color: isHovered ? '#EDE9FE' : '#916bbf',
                             textShadow: isHovered ? '0 0 10px #916bbf, 0 0 20px #EDE9FE, 0 0 30px #EDE9FE, 0 0 40px #916bbf' : 'none',
                             transition: 'color 0.3s ease, text-shadow 0.3s ease'
                         }}

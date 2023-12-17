@@ -42,7 +42,7 @@ const ProductCard: FC<ProductCardProps> = ({
     return (
         <div 
             onClick={handleClick}
-            className='bg-white group cursor-pointer rounded-xl border border-custom-light-purple p-3 space-y-4'>
+            className='bg-white group cursor-pointer rounded-xl border border-custom-light-purple p-3 space-y-4 hover:text-custom-purple'>
             <div className='aspect-square rounded-xl bg-gray-100 relative' >
                 <Image
                     src={data?.images?.[0]?.url}
@@ -64,11 +64,11 @@ const ProductCard: FC<ProductCardProps> = ({
                 </div>
             </div>
             <div>
-                <p className="font-semibold text-lg hover:text-custom-purple">
+                <p className="font-semibold text-lg ">
                     {data.name}
                 </p>
                 <p className='text-sm text-gray-500'>
-                    {data.category?.name}
+                    {data.subcategory?.name}
                 </p>
             </div>
             <div className='flex items-center justify-between '>

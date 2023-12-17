@@ -10,9 +10,9 @@ import toast from 'react-hot-toast'
 
 const Summary = () => {
 
-    const searchParams = useSearchParams()
-    const items = useCart((state) => state.items)
-    const removeAll = useCart((state) => state.removeAll)
+    const searchParams = useSearchParams();
+    const items = useCart((state) => state.items);
+    const removeAll = useCart((state) => state.removeAll);
 
     useEffect(() => {
         if (searchParams.get('success')) {
@@ -27,14 +27,14 @@ const Summary = () => {
 
     const totalPrice = items.reduce((total, item) => {
         return total + Number(item.price)
-    }, 0)
+    }, 0);
 
     const onCheckout = async () => {
         const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
-            productIds: items.map((item) => item.id),
-        })
+            productIds: items.map((item) => item.id)
+        });
 
-        window.location = response.data.url
+        window.location = response.data.url;
     }
 
     return (

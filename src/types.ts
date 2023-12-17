@@ -10,18 +10,24 @@ export interface Category {
     billboard: Billboard
 }
 
+export interface Subcategory {
+    id: string
+    name: string
+    storeId: string
+    billboardId: string
+    billboard: Billboard
+    categoryId: string  // change this line
+    createdAt: string
+    updatedAt: string
+}
+
 export interface Product {
     id: string
     category: Category
+    subcategory: Subcategory
     name: string
     price: string
     isFeatured: boolean
-    variant: {
-        id: string;
-        name: string;
-        options: string[];
-    }
-    selectedVariant: string | null
     images: Image[]
 }
 
