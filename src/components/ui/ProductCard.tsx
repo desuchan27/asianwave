@@ -64,10 +64,10 @@ const ProductCard: FC<ProductCardProps> = ({
                 </div>
             </div>
             <div>
-                <p className="font-semibold text-lg ">
+                <p className="font-semibold text-sm sm:text-lg ">
                     {data.name}
                 </p>
-                <p className='text-sm text-gray-500'>
+                <p className='text-xs sm:text-sm text-gray-500'>
                     {data.subcategory?.name}
                 </p>
             </div>

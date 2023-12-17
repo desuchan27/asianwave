@@ -42,15 +42,20 @@ const Billboard: FC<BillboardProps> = ({
                     }}
                 >
                     <div
-                        className='text-center font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs'
+                        className='text-center font-bold text-5xl sm:text-6xl lg:text-8xl sm:max-w-xl max-w-xs'
                         style={{
                             color: isHovered ? '#EDE9FE' : '#916bbf',
                             textShadow: isHovered ? '0 0 10px #916bbf, 0 0 20px #EDE9FE, 0 0 30px #EDE9FE, 0 0 40px #916bbf' : 'none',
-                            transition: 'color 0.3s ease, text-shadow 0.3s ease'
+                            WebkitTextStroke: isHovered ? '1px' : '1px #EDE9FE',
+                            transition: 'color 0.3s ease, text-shadow 0.3s ease, -webkit-text-stroke 0.3s ease',
+                            textTransform: 'uppercase',
+                            fontWeight: 'bold',
                         }}
                     >
                         {data.label}
                     </div>
+
+
                 </div>
             </div>
         </div>
