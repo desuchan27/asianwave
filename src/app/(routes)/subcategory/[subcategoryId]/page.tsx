@@ -49,14 +49,7 @@ const page: FC<pageProps> = async ({
           data={subcategory.billboard}
         />}
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:hidden text-center">
             <SubcategoryList  // Use SubcategoryList instead of SubcategoryCard
-              items={relatedSubcategories}
-            />
-          </div>
-        </div>
-        <div className="hidden md:flex justify-center w-full overflow-auto">
-          <SubcategoryList  // Use SubcategoryList instead of SubcategoryCard
               items={relatedSubcategories}
             />
         </div>

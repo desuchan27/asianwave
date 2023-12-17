@@ -23,7 +23,7 @@ const SubcategoryCard: FC<SubcategoryCardProps> = ({ data }) => {
       onClick={handleClick}
       className='cursor-pointer'
     >
-      <h2 className="font-semibold text-lg hover:text-custom-purple">{data.name}</h2>
+      <h2 className="font-semibold text-sm md:text-lg hover:text-custom-purple">{data.name}</h2>
     </div>
   )
 }

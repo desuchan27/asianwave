@@ -26,7 +26,12 @@ const Navbar = async () => {
                         </div>
                         <p className="font-bold text-xl lg:text-3xl text-custom-purple hidden sm:block">ASIANWAVE</p>
                     </Link>
-                    <MainNav data={categories} />
+                    <div className="overflow-auto sm:hidden">
+                        <MainNav data={categories} />
+                    </div>
+                    <div className="hidden sm:block">
+                        <MainNav data={categories} />
+                    </div>
                     <NavbarActions />
                 </div>
             </Container>
