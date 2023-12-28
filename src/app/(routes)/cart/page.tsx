@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import CartItem from './components/CartItem'
 import Summary from './components/Summary'
 
+export const revalidate = 0
 
 
 const Page = ({

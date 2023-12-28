@@ -9,6 +9,7 @@ interface ProductListProps {
 }
 
 const ProductList: FC<ProductListProps> = ({title, items}) => {
+
   return (
     <div className='space-y-4'>
         <h3 className='font-bold text-xl sm:text-3xl text-custom-purple'>{title}</h3>

@@ -56,10 +56,6 @@ const ProductCard: FC<ProductCardProps> = ({
                             onClick={ onPreview }
                             icon={ <Expand size={20} className='text-gray-600' /> }
                         />
-                        <IconButton
-                            onClick={ onAddToCart }
-                            icon={ <ShoppingCart size={20} className='text-gray-600' /> }
-                        />
                     </div>
                 </div>
             </div>
@@ -69,6 +65,9 @@ const ProductCard: FC<ProductCardProps> = ({
                 </p>
                 <p className='text-xs sm:text-sm text-gray-500'>
                     {data.subcategory?.name}
+                </p>
+                <p className='text-xs sm:text-sm text-gray-500'>
+                    {data.productType?.name}
                 </p>
             </div>
             <div className='flex items-center justify-between '>

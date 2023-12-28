@@ -21,14 +21,21 @@ export interface Subcategory {
     updatedAt: string
 }
 
+export interface ProductType {
+    id: string
+    name: string
+}
+
 export interface Product {
     id: string
     category: Category
     subcategory: Subcategory
+    productType: ProductType
     name: string
     price: string
     isFeatured: boolean
     images: Image[]
+    quantity: number
 }
 
 export interface Image {
