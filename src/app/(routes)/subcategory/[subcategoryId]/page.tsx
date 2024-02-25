@@ -1,3 +1,4 @@
+
 // src\app\routes\subcategory\[subcategoryId]\page.tsx
 
 import getCategory from '@/actions/getCategory'
@@ -15,9 +16,6 @@ import SubcategoryList from '@/components/SubcategoryList'
 interface pageProps {
   params: {
     subcategoryId: string,
-  }
-  searchParams: {
-
   }
 }
 
@@ -57,7 +55,7 @@ const page: FC<pageProps> = async ({
           <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8 pt-10">
             <ProductList
               title="Featured Products"
-              items={featuredProducts}
+              items={products}
             />
           </div>
         </div>
