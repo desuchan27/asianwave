@@ -33,7 +33,7 @@ const page: FC<pageProps> = async ({
 
   const featuredProducts = await getProducts({
     subcategoryId: params.subcategoryId,
-    isFeatured: false
+    isFeatured: true
   })
 
   const subcategory = await getSubcategory(params.subcategoryId) // pass subcategoryId to getSubcategory
