@@ -29,10 +29,7 @@ const page: FC<pageProps> = async ({
     subcategoryId: params.subcategoryId
   })
 
-  const featuredProducts = await getProducts({
-    subcategoryId: params.subcategoryId,
-    isFeatured: true
-  })
+  const featuredProducts = products.filter(prod => prod.isFeatured === true)
 
   const subcategory = await getSubcategory(params.subcategoryId) // pass subcategoryId to getSubcategory
 
@@ -55,7 +52,7 @@ const page: FC<pageProps> = async ({
           <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8 pt-10">
             <ProductList
               title="Featured Products"
-              items={products}
+              items={featuredProducts}
             />
           </div>
         </div>
